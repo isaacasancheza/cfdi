@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd"
+    Version="4.0" Serie="EATS" Folio="2025003150001" Fecha="2024-03-01T01:42:00" FormaPago="27"
+    CondicionesDePago="Pago en una sola exhibición" SubTotal="131.72" Moneda="MXN" Total="152.80"
+    TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="11510" Exportacion="01"
+    Certificado="a1b2c3d4e5f67890123456789abcde1234567890abcdef"
+    NoCertificado="12345678901234567890"
+    Sello="GfY2Bsc6j2KnZkpB45g7I1nvdy9pTge5VdLX9QfhJHgV7u1Xs3BxlL4y5B3lW7Jz">
+    <cfdi:Emisor Rfc="XAXX010101000" Nombre="UBER PORTIER MEXICO" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="XAXX010101000" Nombre="HOMERO SANCHEZ"
+        DomicilioFiscalReceptor="99999" RegimenFiscalReceptor="626" UsoCFDI="G03" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="80141706" Cantidad="1" ClaveUnidad="E48"
+            Unidad="Unidad de servicio"
+            Descripcion="Tasa de Servicio uso de la plataforma Uber Eats 01/02/24 - 01/03/24 - Negocio"
+            ValorUnitario="131.72" Importe="131.72" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="131.72" Impuesto="002" TipoFactor="Tasa"
+                        TasaOCuota="0.160000" Importe="21.08" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="21.08">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="131.72" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000"
+                Importe="21.08" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+            xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"
+            Version="1.1"
+            SelloCFD="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7ZxhYsd5T+wmf9Ylj9wLhXxE12eEsYNnExnCBgj3+0fMGrdPLZk3M2m6dGqFlE5Wnsdq4FyD5h9u8Nw/0S5G6lIKjBMbXXsdR8v9f6mEbdc0LtQwETNE4m6lzRhyDd8IcazA7ruvdZODfN1rcsBHpIWj0FhgA3X+f4O09rbAmdmn1bsHqAhGFZmZZP4fRzj4FtmT2w8r4JloByLgU+/ZG4pl6iHZYvshqJl3nDpw2MEjiLeNEkeShbqHbL4kFk7uSP8RmPqF9lEjcS0UM0o1vPoxYwTrwJw9sJOMlxnU4Ffi1NnggECzUChUpgq1b2K7pGd3LDl8l3fZ4uDRcHVZy6YkmWVg9H6wA=="
+            NoCertificadoSAT="20001000000300012345" RfcProvCertif="AAA010101AAA"
+            UUID="B5471F7B-1BB9-4928-A17F-D4C3A1A07E9D" FechaTimbrado="2024-03-01T01:42:00"
+            SelloSAT="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7f72sdL5F9rDROdQ+IK2PscTjzToE35c6ZmD2OqH7M5FkT3kk9Y1zYH1yKddOtK/cKLr5dO//dXyD6TRyVEJrZnoCKbWQLy2bgAeWIqBQnPjXB2F5XJIpNqLr+Zk++xIX+4od9X8Gz8X9TLt4t08Jdl0tI8hpJ2p3D9chAkmq4s3sv1ts7zCmcNkOXtO5bTWWkINh+NB2gGi57PBsXMtx+kpIRdf5Fq6wTzjvNEPM0zG6Zm+pWnoUhncoNABg7YZgBjiw6cdNl0nqtSkLlQm9pCzD8E0vqJ6dtmQ71EOHXzLTm7fyjx2Qw3H9pVu8uYFA==" />
+    </cfdi:Complemento>
+</cfdi:Comprobante>

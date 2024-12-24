@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cfdi"
+version = "0.1.0"
+license = "LGPL-3.0"
+license-files = [
+  "LICENSE",
+]
+requires-python = ">=3.13"
+dependencies = [
+  "lxml>=5.3.0",
+  "pydantic-xml>=2.14.3",
+]
+
+[project.optional-dependencies]
+pdf = [
+    "boto3>=1.37.18",
+    "qrcode>=8.0",
+    "num2words>=0.5.14",
+    "reportlab>=4.3.1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "ruff>=0.11.1",
+    "astor>=0.8.1",
+    "boto3>=1.37.18",
+    "pytest>=8.3.5",
+    "coverage>=7.7.0",
+    "openpyxl>=3.1.5",
+    "lxml-stubs>=0.5.1",
+    "boto3-stubs[dynamodb]>=1.37.18",
+]
+
+[tool.mypy]
+plugins = [
+  "pydantic_xml.mypy"
+]
+
+[tool.pytest.ini_options]
+addopts = [
+  "-vv",
+    "--strict-markers",
+    "--import-mode=importlib",
+]
+pythonpath = [
+  "."
+]
