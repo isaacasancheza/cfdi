@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cfdi"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+  "lxml>=5.3.0",
+  "pydantic-xml",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+    "mypy>=1.14.0",
+    "pytest>=8.3.4",
+    "coverage>=7.6.9",
+    "devtools>=0.12.2",
+    "python-dateutil>=2.9.0.post0",
+]
+
+[tool.mypy]
+plugins = [
+  "pydantic_xml.mypy"
+]
+
+[tool.pytest.ini_options]
+addopts = [
+  "-vv",
+    "--strict-markers",
+    "--import-mode=importlib",
+]
+pythonpath = [
+  "."
+]

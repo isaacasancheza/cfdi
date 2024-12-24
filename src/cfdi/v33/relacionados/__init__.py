@@ -1,0 +1,1 @@
+from .relacionados import Relacionados
