@@ -1,0 +1,10 @@
+{
+    "01": "No objeto de impuesto",
+    "02": "S\u00ed objeto de impuesto",
+    "03": "S\u00ed objeto del impuesto y no obligado al desglose",
+    "04": "S\u00ed objeto del impuesto y no causa impuesto",
+    "05": "S\u00ed objeto del impuesto, IVA cr\u00e9dito PODEBI",
+    "06": "S\u00ed objeto del IVA, No traslado IVA",
+    "07": "No traslado del IVA, S\u00ed desglose IEPS",
+    "08": "No traslado del IVA, No desglose IEPS"
+}
