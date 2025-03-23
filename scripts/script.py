@@ -1,3 +1,4 @@
+#!/usr/bin/env -S uv run
 import ast
 from argparse import ArgumentParser, ArgumentTypeError
 from pathlib import Path
